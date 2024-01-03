@@ -55,29 +55,77 @@ h2 {
 
 
 .start {
-    border: 2px solid black;
-    display: flex;
-    flex-direction: row;
+  /*  border: 2px solid black; */
+   /* display: flex;
+    flex-direction: row; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative ;
 }
 
 .startimg {
-    border: 2px solid black;   
+    /* border: 2px solid black; */   
 
 }
 
 .startimg img {
     width: 30rem;
+    margin-left: 6rem;
+}
+
+.startText {
+    display: flex;
+    flex-direction: column;
 }
 
 .startTitle  {
-    border: 2px solid blue;
-    margin-top: 12rem;
+   /* border: 2px solid blue; */
+    margin-top: 9rem;
     margin-inline: 3.5rem;
+    color: #263238;
+    font-size: 32px;
 
 }
 
 .startSubtitle {
-    margin-top: 2rem;
+    margin-top: 0.5rem;
     margin-inline: 4rem;
 }
 
+.startButtons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
+    height: auto;
+    
+}
+
+.startButtons button {    
+    margin-inline: 4rem;
+    background-color: #FF725E;
+    color: white;
+    height: 3rem;
+    border-radius: 8px;
+    border: none;
+    
+}
+
+.startButtons a {
+    /* border: 2px solid black; */
+    text-decoration: underline;
+    color: #FF725E;
+    display: flex;
+    align-items: center;
+    height: 1.5rem;
+    width: 12rem;
+    margin-top: 0.8rem 
+}
+
+.startRodapé {
+    position: absolute;
+    top: 400px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -10;
+}
