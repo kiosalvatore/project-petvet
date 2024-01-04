@@ -213,7 +213,7 @@ p {
 
 .faqImg {
     width: 33rem;
-    padding-bottom: 33rem;
+  /*  padding-bottom: 33rem; */
     margin-left: 4rem;
 }
 
@@ -241,6 +241,16 @@ p {
     border-left: 1px solid #FF725E;
     border-radius: 0 0 8px 8px;
     margin-top: -8px;
+    padding: 0 24px;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.duvida.ativa p {
+    height: fit-content;
+    opacity: 1;
     padding: 24px;
 }
 
@@ -249,8 +259,8 @@ footer {
     color: #263238;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 5rem;
-    padding-top: 10rem;
+    margin-top: 0rem;
+    padding-top: 7rem;
     padding-bottom: 5rem;
 }
 
